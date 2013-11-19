@@ -50,6 +50,11 @@
   -moz-box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
   box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
 }
+.drop-shadow-color(@x-axis: 0, @y-axis: 1px, @blur: 2px, @color: rgba(0, 0, 0, 0.2)) {
+  -webkit-box-shadow: @x-axis @y-axis @blur @color;
+  -moz-box-shadow: @x-axis @y-axis @blur @color;
+  box-shadow: @x-axis @y-axis @blur @color;
+}
 .rounded(@radius: 2px) {
   -webkit-border-radius: @radius;
   -moz-border-radius: @radius;
