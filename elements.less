@@ -22,6 +22,13 @@
                                  @start);
   filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@stop,@start));
 }
+.horizontal-gradient(@color: #f5f5f5, @start: #eee, @stop: #fff) {
+  background: @color;
+  background: -webkit-linear-gradient(left, @start, @stop);
+  background: -o-linear-gradient(right, @start, @stop);
+  background: -moz-linear-gradient(right, @start, @stop);
+  background: linear-gradient(to right, @start, @stop);
+}
 .bw-gradient(@color: #F5F5F5, @start: 0, @stop: 255) {
   background: @color;
   background: -webkit-gradient(linear,
